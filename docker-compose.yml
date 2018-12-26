@@ -1,11 +1,15 @@
 version:  '3.7'
 services:
   mysql:
-    image: mysql:8.0
+    image: percona:5.7
     restart: on-failure
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - './backend/mysql:/docker-entrypoint-initdb.d'  # runs init.sql automatically in docker image
+    ports:
+      - 3306:3306
   nginx:
     image: nginx:1.15.3-alpine
     restart: on-failure
