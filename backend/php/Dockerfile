@@ -13,6 +13,6 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 WORKDIR /usr/src/app
 
-COPY server/app /usr/src/app
+COPY backend/php /usr/src/app
 
 RUN PATH=$PATH:/usr/src/app/vendor/bin:bin
