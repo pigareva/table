@@ -3,6 +3,7 @@ services:
   mysql:
     image: percona:5.7
     restart: on-failure
+    command: --disable-partition-engine-check
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -42,7 +43,5 @@ services:
       - ${REACT_APP_PORT}:${REACT_APP_PORT}
     volumes:
       - ./frontend:/app
-#    links:
-#      - backend
     command: npm run start
 

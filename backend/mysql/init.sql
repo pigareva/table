@@ -39,7 +39,7 @@ INSERT INTO `feedbacks` (`id`, `date_created`, `page`, `note`, `text`)
 VALUES
 	(1,'2018-12-26 20:24:43','serp',2,'Kindesitz'),
 	(2,'2018-12-26 20:25:32','station',1,'text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'),
-	(3,'2018-12-26 20:25:56','serp',0,'here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It use');
+	(3,'2018-12-26 20:25:56','serp',0,'here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It use');
 
 /*!40000 ALTER TABLE `feedbacks` ENABLE KEYS */;
 UNLOCK TABLES;
