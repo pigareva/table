@@ -25,12 +25,15 @@ class App extends Component {
     const array  = json.survey.filter((feedback) => feedback.text && (feedback.text.length > 20));
     const feedbacks = array.map(item => ({
       page: item.page,
-      date: item.date,
-      text: item.text.toString()
+      date: item.date.slice(0,10),
+      text: item.text
     }))
       .sort((a,b) => a.date - b.date);
 
     this.setState({ feedbacks });
+
+    this.setNumber = 0;
+    this.selectFeedback();
     this.startTime();
   }
 
@@ -43,7 +46,6 @@ class App extends Component {
   }
 
   startTime() {
-    this.setNumber = 0;
     this.timerID = setInterval(
       () => this.selectFeedback(),
       10000,
