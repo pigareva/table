@@ -30,6 +30,7 @@
     max-width: 20vw;
 }
 
-.TextColumn {
+.TextColumn span{
     max-width: 60vw;
+    white-space: normal;
 }
